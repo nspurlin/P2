@@ -1,7 +1,7 @@
 //Requirement 4A
 var isArmstrong = function(n){
 	"use strict";
-	var sum = "";
+	var sum = 0;
 	n = String(n);
 	for(var i = 0; i < n.length; ++i)
 	sum = sum + Math.pow(n[i], n.length)
@@ -19,7 +19,26 @@ if(sum == n){
 
 
 //Requirement 4B
-var allArmstrongs = function(n){
+var allArmstrongs = function (){
+	var result="";
+for(var i=1; i<100000; i++) {
+	if(isArmstrong(i))
+		result = result + String(i) + "," ;
+}
+	return result;
+}
 
-	
+
+
+//Requirement 4C
+
+var allSubstrings1 = function(s){
+	var result='';
+	s = String(s);
+	for(var i = 0; i <= s.length; i++){
+	for (var j = i+1; j <= s.length; j++){
+		result = result + s.substr(i,j) + "," ;
+	}
+}
+	return result;
 }
