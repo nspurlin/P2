@@ -13,7 +13,8 @@ if(sum == n){
 
         else{
       	return false;
-}}
+	}	
+}
 
 
 
@@ -41,4 +42,36 @@ var allSubstrings1 = function(s){
 	}
 }
 	return result;
+}
+
+
+
+//Requirement 4D
+
+
+var allSubstrings1 = function(s){
+	var result='';
+	s = String(s);
+	for(var i = 0; i <= s.length; i++){
+	for (var j = i+1; j <= s.length; j++){
+		result = result + s.substr(i,j) + "," ;
+	}
+}
+	return result;
+}
+
+
+//Requirement 4E
+var maxWord = function (wstring) {
+        'use strict';
+        var mylist = wstring.split(" ");
+        var longest = "";
+
+        for (var i = 0; i < mylist.length; ++i){
+        var word = mylist[i];
+        if(longest.length<=word.length) {
+        longest = word;
+        }
+        }
+        return longest;
 }
