@@ -1,5 +1,5 @@
 body {
-  background: #f9e933;
+  background: #66FFFF;
 }
 
 header, main, footer {
@@ -16,7 +16,7 @@ header {
   overflow: auto;
 }
 
-header h1 {
+header h2 {
   float: left;
   width: 570px;
 }
