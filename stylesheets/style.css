@@ -17,7 +17,7 @@ header {
 }
 
 header h1 {
-  color: red;
+  font-size: 2em;
   float: left;
   width: 570px;
 }
