@@ -16,7 +16,8 @@ header {
   overflow: auto;
 }
 
-header h2 {
+header h1 {
+  color: red;
   float: left;
   width: 570px;
 }
